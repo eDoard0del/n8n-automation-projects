@@ -1,2 +1,8 @@
-# n8n-automation-projects
-A colletion of n8n automation workflows for e-commerce and notification management, featuring complex JSON logic and API integrations
+# n8n Automation Portfolio
+This repository contains my custom workflows developed in n8n.
+Key Features:
+· E-commerce Automation: Real-time order processing using Webhooks and JSON parsing.
+· Logic Gates: Advanced use of IF/AND nodes for conditional routing.
+· API Integration: Connects Telegram and Airtable for automated reporting.
+
+Certified by n8n Academy - Level 1 (Score: 92%)
