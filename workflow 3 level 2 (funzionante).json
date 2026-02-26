@@ -1,0 +1,65 @@
+{
+  "name": "workflow 3 level 2 (funzionante)",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        -48
+      ],
+      "id": "1776eb2b-5cd6-4853-a20b-6695f01302ff",
+      "name": "Error Trigger"
+    },
+    {
+      "parameters": {
+        "authentication": "webhook",
+        "content": "=The workflow {{ $json.workflow.name }} failed, with the error message: {{ $json.execution.error.message }}. Last node executed: {{ $json.execution.lastNodeExecuted }}. Check this workflow execution here: {{ $json.execution.url }} My Unique ID: 9b66aad2d55e772a483102f33b3407ad",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [
+        448,
+        -48
+      ],
+      "id": "186bea92-12b1-41e8-bbcf-f63c46e0a971",
+      "name": "Discord",
+      "webhookId": "44c9e62b-ec9f-4c9e-bc6c-3da11962413f",
+      "credentials": {
+        "discordWebhookApi": {
+          "id": "pk2ACj54kuM1jHNr",
+          "name": "Discord Webhook account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Discord",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "5f2b7dae-6d62-4e59-a8b0-bdeb883d1d05",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "6ae78bd46045c3a567c5c0fbdebdfa461677cad868110c56763fe9872c28c2ef"
+  },
+  "id": "sI3RohYEi58zHLZq",
+  "tags": []
+}
