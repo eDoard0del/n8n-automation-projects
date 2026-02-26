@@ -6,3 +6,4 @@ Key Features:
 · API Integration: Connects Telegram and Airtable for automated reporting.
 
 Certified by n8n Academy - Level 1 (Score: 92%)
+Certified by n8n Academy - Level 2 (Score: 13/15)
